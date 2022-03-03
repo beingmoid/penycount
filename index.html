@@ -1,962 +1,753 @@
+
+
+
+
+
+
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang=en>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PenyCount</title>
-    <!-- StyleSheet -->
-    <link rel="stylesheet" href="style.css">
-    <!-- FontAwsomeCDN -->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<script async>(function(b,m,h,a,g){b[a]=b[a]||[];b[a].push({"gtm.start":new Date().getTime(),event:"gtm.js"});var k=m.getElementsByTagName(h)[0],e=m.createElement(h),c=a!="dataLayer"?"&l="+a:"";e.async=true;e.src="https://www.googletagmanager.com/gtm.js?id="+g+c;k.parentNode.insertBefore(e,k)})(window,document,"script","dataLayer","GTM-MFSCBWK");</script>
+<meta charset=UTF-8>
 
-    <!-- bootstrap Icon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css">
-    <!-- Google Font -->
-
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="slider-backend.css">
-
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<meta name="Googlebot" content="all|none, index|noindex, follow|nofollow, notranslate, noydir, noodp, noarchive, snippet|nosnippet, noimageindex, nocache"/>
+<meta name=viewport content="width=device-width, initial-scale=1.0">
+<meta name="google-site-verification" content="SL6cc-aXCXjwmx_IF_mNTC9_A_2728195LGWZSgnkcU" />
+<title>PenyCount</title>
+<link rel=stylesheet href=style.css>
+<link rel=stylesheet href=https://pro.fontawesome.com/releases/v5.10.0/css/all.css integrity=sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p crossorigin=anonymous />
+<link href=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css rel=stylesheet integrity=sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3 crossorigin=anonymous>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.0/font/bootstrap-icons.css>
+<link rel=preconnect href=https://fonts.gstatic.com crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,700&display=swap" rel=stylesheet>
+<link rel=stylesheet href=slider-backend.css>
 
 </head>
-
-<body class="bg">
-    <!-- NavBar -->
-    <section class="PenyCount py-4">
-        <nav class="navbar navbar-expand-lg navbar-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="logoimage" src="./images/logo.png" alt="PennyCount"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 me-5 pe-5 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link " href="#how-it-works">How it Works</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#pricing">Pricing</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link " href="#testimonials">Testimonials</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " href="#faq">FAQ</a>
-                        </li>
-                    </ul>
-                    <ul class="navbar-nav  mb-2 mb-lg-0">
-                        <button type="button" class="btn btn-primary">+1(506) 307-4001</button>
-
-                        <button type="button" class="btn btn-primary"><a href="javascript:void(Tawk_API.toggle())">Chat Now </a></button>
-
-
-                    </ul>
-                </div>
-
-            </div>
-        </nav>
-        <div class="container-fluid EasyBook mb-5">
-            <div class="row">
-                <div class="col-md-8">
-                        <div id="countdown" class="countdown mb-3">
-                            <div class="countdown-number">
-                                <span class="days countdown-time"></span>
-                                <span class="countdown-text">Days</span>
-                            </div>
-                            <div class="countdown-number">
-                                <span class="hours countdown-time"></span>
-                                <span class="countdown-text">Hours</span>
-                            </div>
-                            <div class="countdown-number">
-                                <span class="minutes countdown-time"></span>
-                                <span class="countdown-text">Minutes</span>
-                            </div>
-                            <div class="countdown-number">
-                                <span class="seconds countdown-time"></span>
-                                <span class="countdown-text">Seconds</span>
-                            </div>
-                        </div>
-                        
-                    <h1>Easy Bookkeeping & <br>
-                        Accounting Services For SME’s</h1>
-                    <h6>Discover How You Can Track Expenses, Customize invoices, run Reports - All in one Place</h6>
-                    <ul>
-                        <li><span> Create Invoices, Track Expenses and Maintain
-                                your
-                                Cashflow</span></li>
-                        <li><span>Maintain Digital record for any or every Bills,
-                                invoices which helps you for your tax time.</span></li>
-
-                        <li><span>24/7 Support</span></li>
-                        <li><span>Dedicated Finance Expert</span></li>
-                        <li><span>100% Data Privacy Guaranteed </span></li>
-                    </ul>
-                    <div class="ratting">
-                    <img src="images/rating.png" alt="">
-                </div>
-
-                </div>
-                <div class="col-md-3">
-                    <div class="frm">
-                        <form>
-                            <h4>
-                               <span> ACTIVATE 70% OFF</span> <br>
-                                Sign Up Today
-                            </h4>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Name" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Phone Number"
-                                    aria-label="Phone Number" aria-describedby="basic-addon1">
-
-                            </div>
-                            <button type="submit" class="btn btn-primary">Get this Offer Now</button>
-                        </form>
-                    </div>
-
-                </div>
-                <div class="col-md-1"></div>
-            </div>
-
-        </div>
-    </section>
-    <!-- NavBar -->
-
-    <!-- OurPartners -->
-    <section class="OurPartners">
-        <div class="container">
-            <div class="row">
-                <div class="col-md">
-                    <div class="spbt-image">
-
-                        <img src="./images/Intuit_QuickBooks_logo.png" alt="">
-                        <img src="./images/myob.png" alt="">
-                        <img src="./images/xero-logo-png-transparent.png" alt="">
-                        <img src="./images/clienthub.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- OurPartners -->
-
-    <!-- -------This is how------ -->
-    <section class="thisHow" id="how-it-works">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div>
-                        <h2>THIS IS HOW WE DO IT!</h2>
-                        <p>Understanding The Easy To Use Process</p>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="row  pb-5">
-                        <div class="col-md-2">
-                            <img src="./images/phone.png" alt="">
-                        </div>
-                        <div class="col">
-                            <h6>Schedule A Call </h6>
-                            <p>In this phase, we connect with you for a brief 10-15 minutes call and know about the
-                                services you are expecting from us.
-
-
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-2">
-                            <img src="./images/tick.png" alt="">
-                        </div>
-                        <div class="col">
-                            <h6>Processing</h6>
-                            <p>This phase includes checking all your current data and linking your credit card and bank
-                                accounts with other integrated partners.
-
-
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-2">
-                            <img src="./images/rocket.png" alt="">
-                        </div>
-                        <div class="col">
-                            <h6>Launch </h6>
-                            <p>Once we have completed all the required processing, we launch our services, handle your
-                                accounts, and more.
-                            </p>
-                        </div>
-
-                    </div>
-                    <div class="row pb-5">
-                        <div class="col-md-2">
-                            <img src="./images/call.png" alt="">
-                        </div>
-                        <div class="col">
-                            <h6>Support</h6>
-                            <p>We provide 24/7 support, we also help you generate weekly/monthly reports as per your
-                                preference.
-                            </p>
-                        </div>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-    </section>
-    <!-- -------This is how------ -->
-    <!-- ------PricingPlan-------- -->
-    <section class="pricingPlan" id="pricing">
-        <div class="container">
-            <div class="row">
-                <h2>PRICING PLAN</h2>
-                <P class="text-center">List of our Pricing Packages </P>
-                <div class="col-md-3">
-                            
-                                <div class="card" style="width: 18rem;">
-                                    <div class="card-body">
-                                        <div>
-                                            <img src="./images/mark.png" alt="">
-                                            <h5 class="card-title">BASIC</h5>
-                                            <p class="card-text">Monthly Expenses Below $25k
-                                            </p>
-                                            <h3>$195 /<span class="mon"> month</span>
-                                            </h3>
-                                            <ul>
-                                                <li>Accounting Software Included
-                                                </li>
-                                                <li>Monthly Bookkeeping
-                                                </li>
-                                                <li>Dedicated Finance Expert
-                                                </li>
-                                                <li>Financial Reporting
-                                                </li>
-                                                <li>Accounting Software</li>
-                                                <li>Create Company User/Books</li>
-                                                <li>Business Checking Account Integration</li>
-                                                <li>Upload Bank Activity - Monthly</li>
-                                                <li>Classify Transactions</li>
-                                                <li>Reconciliation of Business Checking Account</li>
-                                                <li>Financial Reporting</li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Get Free Consultation</a>
-                                    </div>
-                            </div>
-                        </div>
-                <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-
-                                    <div class="card-body">
-                                        <div>
-                                            <img src="./images/lcatin.png" alt="">
-                                            <h5 class="card-title">BUILD</h5>
-                                            <p class="card-text">Monthly Expenses Below $50k
-
-                                            </p>
-                                            <h3>$245 /<span class="mon"> month</span>
-
-                                            </h3>
-                                            <ul>
-                                                <li>Accounting Software Included
-                                                </li>
-                                                <li>Semi Bookkeeping
-
-                                                </li>
-                                                <li>Dedicated Finance Expert
-                                                </li>
-                                                <li>Financial Reporting
-                                                </li>
-                                                <li>Accounting Software</li>
-                                                <li>Create Company User/Books</li>
-                                                <li>1 Business Checking Account Integration</li>
-                                                <li>1 Credit Card Account Integration</li>
-                                                <li>Upload Bank Activity – Monthly</li>
-                                                <li>Classify Transactions</li>
-                                                <li>Reconciliation of Business Checking Account</li>
-                                                <li>Financial Reporting</li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Get Free Consultation</a>
-                                    </div>
-                                </div>
-                            </div>
-                <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-
-                                    <div class="card-body">
-                                        <div>
-                                            <img src="./images/launch.png" alt="">
-                                            <h5 class="card-title">GROW</h5>
-                                            <p class="card-text">Monthly Expenses Below $70k
-
-                                            </p>
-                                            <h3>$345 /<span class="mon"> month</span>
-
-                                            </h3>
-                                            <ul>
-                                                <li>Accounting Software Included
-                                                </li>
-                                                <li>Weekly Bookkeeping
-                                                </li>
-                                                <li>Dedicated Finance Expert
-                                                </li>
-                                                <li>Financial Reporting
-                                                </li>
-                                                <li>Invoicing</li>
-                                                <li>Accounting Software</li>
-                                                <li>Create Company User/Books</li>
-                                                <li>1 Business Checking Account Integration</li>
-                                                <li>1 Credit Card Account Integration</li>
-                                                <li>Upload Bank Activity – Monthly</li>
-                                                <li>Classify Transactions</li>
-                                                <li>Reconciliation of Business Checking Account</li>
-                                                <li>Financial Reporting</li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Get Free Consultation</a>
-                                    </div>
-                                </div>
-                            </div>
-                    
-                <div class="col-md-3">
-                                <div class="card" style="width: 18rem;">
-
-                                    <div class="card-body">
-                                        <div>
-                                            <img src="./images/graph.png" alt="">
-                                            <h5 class="card-title">VENTURE
-                                            </h5>
-                                            <p class="card-text">Monthly Expenses Below $100k
-
-                                            </p>
-                                            <h3>$445 /<span class="mon"> month</span>
-
-                                            </h3>
-                                            <ul>
-                                                <li>Accounting Software Included
-                                                </li>
-                                                <li>Bi-Weekly Bookkeeping
-                                                </li>
-                                                <li>Dedicated Finance Expert
-                                                </li>
-                                                <li>Financial Reporting
-                                                </li>
-                                                <li>Invoicing</li>
-                                                <li>Company Financial Summary
-                                                </li>
-                                                <li>Accounting Software</li>
-                                                <li>Create Company User/Books</li>
-                                                <li>1 Business Checking Account Integration</li>
-                                                <li>1 Credit Card Account Integration</li>
-                                                <li>Upload Bank Activity – Monthly</li>
-                                                <li>Classify Transactions</li>
-                                                <li>Reconciliation of Business Checking Account</li>
-                                                <li>Financial Reporting</li>
-                                            </ul>
-                                        </div>
-                                        <a href="#" class="btn btn-primary">Get Free Consultation</a>
-                                    </div>
-                                </div>
-                            </div>
-            </div>
-        </div>
-    </section>
-    <!-- ------PricingPlan-------- -->
-    <!-- -------Costumer Review------- -->
-    <section class="CustomerReview" id="testimonials">
-        <div class="container">
-            <div class="row">
-                <h2>CUSTOMER REVIEWS</h2>
-                <P>What People Say About Us</P>
-                <div class="slider-backend">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-1"></div>
-                            <div class="col-sm-3">
-                                <div class="result">
-                                    <div data-target="#carousel-example-generic" data-slide-to="0"
-                                        class="active-p caroitem">
-                                        <div class="row">
-
-
-                                            <div class="col-md-3">
-                                                <img src="images/jonbakken.jpg" alt="">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <b> Jon Bakken</b>
-                                                <p>Extremely satisfied by the bookkeeping...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-target="#carousel-example-generic" data-slide-to="1" class="caroitem">
-                                        <div class="row">
-
-
-                                            <div class="col-md-3">
-                                                <img src="images/andrea.jpg" alt="">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <b> Andrea Velle</b>
-                                                <p>Penycount added value to our business...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div data-target="#carousel-example-generic" data-slide-to="2" class="caroitem">
-                                        <div class="row">
-
-
-                                            <div class="col-md-3">
-                                                <img src="images/johngreen.jpg" alt="">
-                                            </div>
-                                            <div class="col-md-8">
-                                                <b> John Green</b>
-                                                <p>No words for the extraordinary support...</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div><!-- /.col-sm-8 -->
-                            <div class="col-md-1"></div>
-                            <div class="col-md-6 col-sm-offset-1">
-                                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                                    <!-- Indicators -->
-                                    <!-- <ol class="carousel-indicators">
-                                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active">
-                                        </li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                                        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-                                    </ol> -->
-
-                                    <!-- Wrapper for slides -->
-                                    <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
-                                            <img src="images/jonbakken.jpg" alt="">
-                                            <p>Extremely satisfied by the bookkeeping services by Penycount. They managed all our finances efficiently and we would recommend their services to everyone.</p>
-                                            <b>Jon Bakken</b>
-                                        </div>
-                                        <div class="item">
-                                            <img src="images/andrea.jpg" alt="">
-                                            <p>Penycount added value to our business by handling our payroll management and accounts payable. We would surely use their services again in the future.</p>
-                                            <b>Andrea Velle</b>
-                                        </div>
-                                        <div class="item">
-                                            <img src="images/johngreen.jpg" alt="">
-                                            <p>No words for the extraordinary support executives they have. Resolved my queries with in 24 hours time period every single time.</p>
-                                            <b>John Green</b>
-                                        </div>
-                                    </div>
-
-                                    <!-- Controls -->
-                                    <!-- <a class="left carousel-control" href="#carousel-example-generic" role="button"
-                                        data-slide="prev">
-                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                        <span class="sr-only">Previous</span>
-                                    </a>
-                                    <a class="right carousel-control" href="#carousel-example-generic" role="button"
-                                        data-slide="next">
-                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                        <span class="sr-only">Next</span>
-                                    </a> -->
-                                </div><!-- /.carousel -->
-
-                            </div><!-- /.col-sm-8 -->
-
-                        </div><!-- /.row -->
-                    </div><!-- /.container -->
-                </div>
-            </div>
-
-
-            <!-- ----------- -->
-        </div>
-        </div>
-
-    </section>
-    <!-- -------Costumer Review------- -->
-
-
-    <!-- -------book an appointment------- -->
-    <section class="booking">
-        <div class="container">
-            <h2>Numbers We Are Proud</h2>
-            <p class="tstt">To know more about our services or to get a free quote, feel free to get in touch. We can
-                schedule a meeting according to your preferences where our specialists can brief you about our services
-                and deliverables.</p>
-            <div class="row">
-                <div class="col-md-3">
-                    <div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/vvv.png" alt="">
-                            </div>
-                            <div class="col-md-8 tst">
-                                <h2>50+</h2>
-                                <p>Experienced Advisors</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/v.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h2>4+</h2>
-                                <p>World Wide Locations</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/vvvv.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h2>20+</h2>
-                                <p>Years of Experience</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3">
-                    <div>
-                        <div class="row">
-                            <div class="col-md-4">
-                                <img src="images/vv.png" alt="">
-                            </div>
-                            <div class="col-md-8">
-                                <h2>176+</h2>
-                                <p>Satisfied Customer</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- -------------- -->
-
-
-    <!-- ------FAQ------ -->
-    <section class="FAQ" id="faq">
-        <div class="container">
-            <div class="row">
-                <H2>Frequently Asked Questions</H2>
-                <div class="col-md-12 mt-5 pt-5">
-
-                    <div class="accordion" id="accordionExample">
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingOne">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    To Whom are our services for?
-
-                                </button>
-                            </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Our services and cutting edge technology are offered for SME’s (Small & Medium
-                                        size) businesses. As these business owner’s wear many hats at the same time,
-                                        where we come in as your accounting firm in order to help you on your
-                                        bookkeeping and accounting needs. Which gives you an edge to focus on your core
-                                        business</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingTwo">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Will I be able to connect with my bookkeeper?
-                                </button>
-                            </h2>
-                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Absolutely! Your bookkeeper is available by phone, email or text to answer any
-                                        questions you may have. You are welcome to reach them at your convenience. Your
-                                        bookkeeper will be in touch with you if they need any clarification on
-                                        transactions.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingThree">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Can I schedule a monthly call to go over my business financials?
-                                </button>
-                            </h2>
-                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Giving you insights of your business through monthly financials is our real
-                                        motive. Our accountant every month will reach you out to go over with your
-                                        financials with you. Which will help you to make business decisions considering
-                                        financial impact.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFour">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                                    How Pennycount is valuing it’s customers?
-                                </button>
-                            </h2>
-                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Our customers find peace of mind in no longer needing to worry about their
-                                        financials – we do it all for them! Real-time accounting, fixed flat monthly
-                                        rate and a supportive team that has your back!</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingFive">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
-                                    How do I manage my receipts?
-                                </button>
-                            </h2>
-                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>We connect digitally with your bank transactions so we will not need your
-                                        receipts for processing your transactions. Incase, if the receipts can be
-                                        forwarded to us it can be attached to every specific transaction which will help
-                                        you for audit purposes.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingsix">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsesix" aria-expanded="false" aria-controls="collapsesix">
-                                    How we can manage your payables?
-                                </button>
-                            </h2>
-                            <div id="collapsesix" class="accordion-collapse collapse" aria-labelledby="headingsix"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>We connect your books with your bank and make timely payments via online ACH
-                                        payments and Checks</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingseven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseseven" aria-expanded="false" aria-controls="collapseseven">
-                                    Can invoicing be managed with Pennycount?
-                                </button>
-                            </h2>
-                            <div id="collapseseven" class="accordion-collapse collapse" aria-labelledby="headingseven"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>With PennyCount we have experts, which will take care of your invoicing on the
-                                        basis of details provided by you</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingeight">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseeight" aria-expanded="false" aria-controls="collapseeight">
-                                    How my receivables can be managed?
-                                </button>
-                            </h2>
-                            <div id="collapseeight" class="accordion-collapse collapse" aria-labelledby="headingeight"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>PennyCount contains dedicated team of receivables which will identify, follow up,
-                                        report our customer for it’s outstanding invoices. In this way you will be
-                                        updated with which job or client has outstanding balance</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingnine">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsenine" aria-expanded="false" aria-controls="collapsenine">
-                                    What are catchup services?
-                                </button>
-                            </h2>
-                            <div id="collapsenine" class="accordion-collapse collapse" aria-labelledby="headingnine"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Being behind on your books is not an uncommon practice for Small and Medium size
-                                        businesses. With PennyCount, we provide you peace of mind to focus on your core
-                                        business instead of getting concerned about your books. We’ll help you catch up
-                                        on bookkeeping and tax returns.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingten">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseten" aria-expanded="false" aria-controls="collapseten">
-                                    Do I need to caught up on my books in order to start up with Pennycount?
-                                </button>
-                            </h2>
-                            <div id="collapseten" class="accordion-collapse collapse" aria-labelledby="headingten"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>Absolutely not! There are many customers that are behind on their books when they
-                                        get started with us. We offer catch-up services to help with this.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="accordion-item">
-                            <h2 class="accordion-header" id="headingeleven">
-                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseeleven" aria-expanded="false"
-                                    aria-controls="collapseeleven">
-                                    How long does it take you catch up?
-                                </button>
-                            </h2>
-                            <div id="collapseeleven" class="accordion-collapse collapse" aria-labelledby="headingeleven"
-                                data-bs-parent="#accordionExample">
-                                <div class="accordion-body">
-                                    <p>On average, it takes 2-3 weeks to complete catch up services. Depending on the
-                                        number of months to catch-up and complexity, the timeframe may vary. We complete
-                                        some catch-up services in just one week, and other more complex services take up
-                                        to 3.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ------FAQ------ -->
-
-
-    <!-- ------------SignUp------------- -->
-    <section class="SignUp">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-md-6">
-                    <div>
-                        <h2>Sign Up Today
-
-                        </h2>
-
-                    </div>
-                </div>
-
-                <div class="col-md-6">
-                    <div>
-                        <form>
-
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Name" aria-label="Username"
-                                    aria-describedby="basic-addon1">
-                            </div>
-                            <div class="mb-3">
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
-                                    placeholder="Email">
-                            </div>
-                            <div class="mb-3">
-                                <input type="text" class="form-control" placeholder="Phone Number" aria-label="Phone Number"
-                                    aria-describedby="basic-addon1">
-
-                            </div>
-                            <button type="submit" class="btn btn-primary">Get free Consultation</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ------------SignUp------------- -->
-    <!-- ------------Footer------------- -->
-    <section class="Footr">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <img src="./images/ftnew.png" alt="">
-                    <p>Our clearly defined culture acts as a
-                        catalyst for achieving fast growth and encourages
-                        top management. Our desire to be the best in
-                        our industry helps us accomplish goals in the given
-                        time frame while maintaining our strict quality standards.
-                    </p>
-                </div>
-                <div class="col-md-3">
-                    <h4>GET STARTED
-                    </h4>
-                    <a href="#">
-                        <p>How It Works
-                        </p>
-                    </a>
-                    <a href="#">
-                        <p>Pricing</p>
-                    </a>
-                    <a href="#">
-                        <p>Testimonials</p>
-                    </a>
-                    <a href="#">
-                        <p>FAQ</p>
-                    </a>
-                    <a href="#">
-                        <p>Get Free Consultation </p>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <h4>Contact</h4>
-                    <a href="#">
-                        <p><i class="bi bi-geo-alt-fill"></i>692 GRANT CIRCLE HANOVER PARK, IL 60133
-                        </p>
-                    </a>
-                    <a href="#">
-                        <p><i class="bi bi-envelope-fill"></i>sales@penycount.com</p>
-                    </a>
-                    <a href="#">
-                        <p><i class="bi bi-telephone-fill"></i>+1 (816) 307-4001</p>
-                    </a>
-                    <div class="socials">
-                        <a href="#">
-                            <p><i class="bi bi-twitter"></i></p>
-                        </a>
-                        <a href="#">
-                            <p><i class="bi bi-facebook"></i></p>
-                        </a>
-                        <a href="#">
-                            <p><i class="bi bi-instagram"></i></p>
-                        </a>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- ------------Footer------------- -->
-
-
-
-
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script>
-        $('.carousel').on('slid.bs.carousel', function () {
-            var carouselData = $(this).data('bs.carousel');
-            var currentIndex = carouselData.getItemIndex(carouselData.$element.find('.item.active'));
-
-            $('.result .caroitem')
-                .removeClass('active-p')
-                .eq(currentIndex)
-                .addClass('active-p');
-        });
-    </script>
-    <!-- BootstrapJS -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
-        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous">
-    </script>
-<script>
-      function getTimeRemaining(endtime) {
-    var t = Date.parse(endtime) - Date.parse(new Date());
-    var seconds = Math.floor((t / 1000) % 60);
-    var minutes = Math.floor((t / 1000 / 60) % 60);
-    var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-    var days = Math.floor(t / (1000 * 60 * 60 * 24));
-    return {
-      total: t,
-      days: days,
-      hours: hours,
-      minutes: minutes,
-      seconds: seconds
-    };
-  }
-
-  function initializeClock(id, endtime) {
-    var clock = document.getElementById(id);
-    var daysSpan = clock.querySelector(".days");
-    var hoursSpan = clock.querySelector(".hours");
-    var minutesSpan = clock.querySelector(".minutes");
-    var secondsSpan = clock.querySelector(".seconds");
-
-    function updateClock() {
-      var t = getTimeRemaining(endtime);
-
-      if (t.total <= 0) {
-        clearInterval(timeinterval);
-
-        var newTime = Date.parse(endtime);
-        var nowTime = Date.parse(new Date());
-
-        while (newTime <= nowTime) {
-          newTime = newTime + 1 * 24 * 60 * 60 * 1000; // add 24hours
-        }
-
-        var deadline = new Date(newTime);
-        initializeClock('countdown', deadline);
-      } else {
-        daysSpan.innerHTML = t.days;
-        hoursSpan.innerHTML = ("0" + t.hours).slice(-2);
-        minutesSpan.innerHTML = ("0" + t.minutes).slice(-2);
-        secondsSpan.innerHTML = ("0" + t.seconds).slice(-2);
-      }
-    }
-
-    updateClock();
-    var timeinterval = setInterval(updateClock, 1000);
-  }
-
-  var deadline = "December 7 2019 00:00:00 GMT+0200";
-  initializeClock("countdown", deadline);
+<body class=bg>
+<section class="PenyCount py-4">
+<nav class="navbar navbar-expand-lg navbar-dark">
+<div class=container-fluid>
+<a class=navbar-brand href=#><img loading="lazy"  class="logoimage" src=./images/logo.png alt=PennyCount></a>
+<button class=navbar-toggler type=button data-bs-toggle=collapse data-bs-target=#navbarSupportedContent aria-controls=navbarSupportedContent aria-expanded=false aria-label="Toggle navigation">
+<span class=navbar-toggler-icon></span>
+</button>
+<div class="collapse navbar-collapse" id=navbarSupportedContent>
+<ul class="navbar-nav ms-auto mb-2 me-5 pe-5 mb-lg-0">
+<li class=nav-item>
+<a class=nav-link href=#how-it-works>How it Works</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#pricing>Pricing</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#testimonials>Testimonials</a>
+</li>
+<li class=nav-item>
+<a class=nav-link href=#faq>FAQ</a>
+</li>
+</ul>
+<ul class="navbar-nav mb-2 mb-lg-0">
+<a href="tel:+1 (816) 307-4001"> <button type=button class="btn btn-primary">+1(506) 307-4001</button></a>
+<a href=javascript:void(Tawk_API.toggle())> <button type=button class="btn btn-primary">Chat Now </button></a>
+</ul>
+</div>
+</div>
+</nav>
+<div class="container-fluid EasyBook mb-5">
+<div class=row>
+<div class=col-md-8>
+<div id=countdown class="countdown mb-3">
+<div class=countdown-number>
+<span class="days countdown-time"></span>
+<span class=countdown-text>Days</span>
+</div>
+<div class=countdown-number>
+<span class="hours countdown-time"></span>
+<span class=countdown-text>Hours</span>
+</div>
+<div class=countdown-number>
+<span class="minutes countdown-time"></span>
+<span class=countdown-text>Minutes</span>
+</div>
+<div class=countdown-number>
+<span class="seconds countdown-time"></span>
+<span class=countdown-text>Seconds</span>
+</div>
+</div>
+<h1>Easy Bookkeeping & <br>
+Accounting Services For SMES</h1>
+<h6>Discover How You Can Track Expenses, Customize invoices, run Reports - All in one Place</h6>
+<ul>
+<li><span> Create Invoices, Track Expenses and Maintain
+your
+Cashflow</span></li>
+<li><span>Maintain Digital record for any or every Bills,
+invoices which helps you for your tax time.</span></li>
+<li><span>24/7 Support</span></li>
+<li><span>Dedicated Finance Expert</span></li>
+<li><span>100% Data Privacy Guaranteed </span></li>
+</ul>
+<div class=ratting>
+<img loading="lazy"  src=images/rating.png alt>
+</div>
+</div>
+<div class=col-md-3>
+<div class=frm>
+<form action id=penycountform>
+<div class=alert>Your message sent!</div>
+<h4>
+<span> ACTIVATE 70% OFF</span> <br>
+Sign Up Today
+</h4>
+<div class=mb-3>
+<input type=text class=form-control required placeholder=Name id=name aria-label=Username aria-describedby=basic-addon1>
+</div>
+<div class=mb-3>
+<input type=email class=form-control required id=email placeholder=Email>
+</div>
+<div class=mb-3>
+<input type=text class=form-control required id=phone placeholder="Phone Number" aria-label="Phone Number" aria-describedby=basic-addon1>
+</div>
+<input type=submit class=btn-primary value="Get this Offer Now">
+</form>
+</div>
+</div>
+<div class=col-md-1></div>
+</div>
+</div>
+</section>
+<section class=OurPartners>
+<div class=container>
+<div class=row>
+<div class=col-md>
+<div class=spbt-image>
+<img loading="lazy"  src=./images/Intuit_QuickBooks_logo.png alt>
+<img loading="lazy"  src=./images/myob.png alt>
+<img loading="lazy"  src=./images/xero-logo-png-transparent.png alt>
+<img loading="lazy"  src=./images/clienthub.png alt>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=thisHow id=how-it-works>
+<div class=container>
+<div class=row>
+<div class=col-md-6>
+<div>
+<h2>THIS IS HOW WE DO IT!</h2>
+<p>Understanding The Easy To Use Process</p>
+</div>
+</div>
+<div class=col-md-6>
+<div class="row pb-5">
+<div class=col-md-2>
+<img loading="lazy"  src=./images/phone.png alt>
+</div>
+<div class=col>
+<h6>Schedule A Call </h6>
+<p>In this phase, we connect with you for a brief 10-15 minutes call and know about the
+services you are expecting from us.
+</p>
+</div>
+</div>
+<div class="row pb-5">
+<div class=col-md-2>
+<img loading="lazy"  src=./images/tick.png alt>
+</div>
+<div class=col>
+<h6>Processing</h6>
+<p>This phase includes checking all your current data and linking your credit card and bank
+accounts with other integrated partners.
+</p>
+</div>
+</div>
+<div class="row pb-5">
+<div class=col-md-2>
+<img loading="lazy"  src=./images/rocket.png alt>
+</div>
+<div class=col>
+<h6>Launch </h6>
+<p>Once we have completed all the required processing, we launch our services, handle your
+accounts, and more.
+</p>
+</div>
+</div>
+<div class="row pb-5">
+<div class=col-md-2>
+<img loading="lazy"  src=./images/call.png alt>
+</div>
+<div class=col>
+<h6>Support</h6>
+<p>We provide 24/7 support, we also help you generate weekly/monthly reports as per your
+preference.
+</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=pricingPlan id=pricing>
+<div class=container>
+<div class=row>
+<h2>PRICING PLAN</h2>
+<P class=text-center>List of our Pricing Packages </P>
+<div class=col-md-3>
+<div class=card style=width:18rem>
+<div class=card-body>
+<div>
+<img loading="lazy"  src=./images/mark.png alt>
+<h5 class=card-title>BASIC</h5>
+<p class=card-text>Monthly Expenses Below $25k
+</p>
+<h3>$195 /<span class=mon> month</span>
+</h3>
+<ul>
+<li>Accounting Software Included
+</li>
+<li>Monthly Bookkeeping
+</li>
+<li>Dedicated Finance Expert
+</li>
+<li>Financial Reporting
+</li>
+<li>Accounting Software</li>
+<li>Create Company User/Books</li>
+<li>Business Checking Account Integration</li>
+<li>Upload Bank Activity - Monthly</li>
+<li>Classify Transactions</li>
+<li>Reconciliation of Business Checking Account</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+<a href=https://buy.stripe.com/14keYj6R3ekJdMs28b class="btn btn-primary">Order Now</a>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div class=card style=width:18rem>
+<div class=card-body>
+<div>
+<img loading="lazy"  src=./images/lcatin.png alt>
+<h5 class=card-title>BUILD</h5>
+<p class=card-text>Monthly Expenses Below $50k
+</p>
+<h3>$245 /<span class=mon> month</span>
+</h3>
+<ul>
+<li>Accounting Software Included
+</li>
+<li>Semi Bookkeeping
+</li>
+<li>Dedicated Finance Expert
+</li>
+<li>Financial Reporting
+</li>
+<li>Accounting Software</li>
+<li>Create Company User/Books</li>
+<li>1 Business Checking Account Integration</li>
+<li>1 Credit Card Account Integration</li>
+<li>Upload Bank Activity â€“ Monthly</li>
+<li>Classify Transactions</li>
+<li>Reconciliation of Business Checking Account</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+<a href=https://buy.stripe.com/3cs03pfnzb8x23KdQS class="btn btn-primary">Order Now</a>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div class=card style=width:18rem>
+<div class=card-body>
+<div>
+<img loading="lazy"  src=./images/launch.png alt>
+<h5 class=card-title>GROW</h5>
+<p class=card-text>Monthly Expenses Below $70k
+</p>
+<h3>$345 /<span class=mon> month</span>
+</h3>
+<ul>
+<li>Accounting Software Included
+</li>
+<li>Weekly Bookkeeping
+</li>
+<li>Dedicated Finance Expert
+</li>
+<li>Financial Reporting
+</li>
+<li>Invoicing</li>
+<li>Accounting Software</li>
+<li>Create Company User/Books</li>
+<li>1 Business Checking Account Integration</li>
+<li>1 Credit Card Account Integration</li>
+<li>Upload Bank Activity â€“ Monthly</li>
+<li>Classify Transactions</li>
+<li>Reconciliation of Business Checking Account</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+<a href=https://buy.stripe.com/9AQ5nJ5MZ1xXcIo3cd class="btn btn-primary">Order Now</a>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div class=card style=width:18rem>
+<div class=card-body>
+<div>
+<img loading="lazy"  src=./images/graph.png alt>
+<h5 class=card-title>VENTURE
+</h5>
+<p class=card-text>Monthly Expenses Below $100k
+</p>
+<h3>$445 /<span class=mon> month</span>
+</h3>
+<ul>
+<li>Accounting Software Included
+</li>
+<li>Bi-Weekly Bookkeeping
+</li>
+<li>Dedicated Finance Expert
+</li>
+<li>Financial Reporting
+</li>
+<li>Invoicing</li>
+<li>Company Financial Summary
+</li>
+<li>Accounting Software</li>
+<li>Create Company User/Books</li>
+<li>1 Business Checking Account Integration</li>
+<li>1 Credit Card Account Integration</li>
+<li>Upload Bank Activity â€“ Monthly</li>
+<li>Classify Transactions</li>
+<li>Reconciliation of Business Checking Account</li>
+<li>Financial Reporting</li>
+</ul>
+</div>
+<a href=https://buy.stripe.com/28o5nJ6R3ccBcIoeUU class="btn btn-primary">Order Now</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=CustomerReview id=testimonials>
+<div class=container>
+<div class=row>
+<h2>CUSTOMER REVIEWS</h2>
+<P>What People Say About Us</P>
+<div class=slider-backend>
+<div class=container>
+<div class=row>
+<div class=col-md-1></div>
+<div class=col-sm-3>
+<div class=result>
+<div data-target=#carousel-example-generic data-slide-to=0 class="active-p caroitem">
+<div class=row>
+<div class=col-md-3>
+<img loading="lazy"  src=images/jonbakken.jpg alt>
+</div>
+<div class=col-md-8>
+<b> Jon Bakken</b>
+<p>Extremely satisfied by the bookkeeping...</p>
+</div>
+</div>
+</div>
+<div data-target=#carousel-example-generic data-slide-to=1 class=caroitem>
+<div class=row>
+<div class=col-md-3>
+<img loading="lazy"  src=images/andrea.jpg alt>
+</div>
+<div class=col-md-8>
+<b> Andrea Velle</b>
+<p>Penycount added value to our business...</p>
+</div>
+</div>
+</div>
+<div data-target=#carousel-example-generic data-slide-to=2 class=caroitem>
+<div class=row>
+<div class=col-md-3>
+<img loading="lazy"  src=images/johngreen.jpg alt>
+</div>
+<div class=col-md-8>
+<b> John Green</b>
+<p>No words for the extraordinary support...</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class=col-md-1></div>
+<div class="col-md-6 col-sm-offset-1">
+<div id=carousel-example-generic class="carousel slide" data-ride=carousel>
+<div class=carousel-inner role=listbox>
+<div class="item active">
+<img loading="lazy"  src=images/jonbakken.jpg alt>
+<p>Extremely satisfied by the bookkeeping services by Penycount. They managed all our finances efficiently and we would recommend their services to everyone.</p>
+<b>Jon Bakken</b>
+</div>
+<div class=item>
+<img loading="lazy"  src=images/andrea.jpg alt>
+<p>Penycount added value to our business by handling our payroll management and accounts payable. We would surely use their services again in the future.</p>
+<b>Andrea Velle</b>
+</div>
+<div class=item>
+<img loading="lazy"  src=images/johngreen.jpg alt>
+<p>No words for the extraordinary support executives they have. Resolved my queries with in 24 hours time period every single time.</p>
+<b>John Green</b>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=booking>
+<div class=container>
+<h2>Numbers We Are Proud</h2>
+<p class=tstt>To know more about our services or to get a free quote, feel free to get in touch. We can
+schedule a meeting according to your preferences where our specialists can brief you about our services
+and deliverables.</p>
+<div class=row>
+<div class=col-md-3>
+<div>
+<div class=row>
+<div class=col-md-4>
+<img loading="lazy"  src=images/vvv.png alt>
+</div>
+<div class="col-md-8 tst">
+<h2>50+</h2>
+<p>Experienced Advisors</p>
+</div>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div>
+<div class=row>
+<div class=col-md-4>
+<img loading="lazy"  src=images/v.png alt>
+</div>
+<div class=col-md-8>
+<h2>4+</h2>
+<p>World Wide Locations</p>
+</div>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div>
+<div class=row>
+<div class=col-md-4>
+<img loading="lazy"  src=images/vvvv.png alt>
+</div>
+<div class=col-md-8>
+<h2>20+</h2>
+<p>Years of Experience</p>
+</div>
+</div>
+</div>
+</div>
+<div class=col-md-3>
+<div>
+<div class=row>
+<div class=col-md-4>
+<img loading="lazy"  src=images/vv.png alt>
+</div>
+<div class=col-md-8>
+<h2>176+</h2>
+<p>Satisfied Customer</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=FAQ id=faq>
+<div class=container>
+<div class=row>
+<H2>Frequently Asked Questions</H2>
+<div class="col-md-12 mt-5 pt-5">
+<div class=accordion id=accordionExample>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingOne>
+<button class=accordion-button type=button data-bs-toggle=collapse data-bs-target=#collapseOne aria-expanded=true aria-controls=collapseOne>
+To Whom are our services for?
+</button>
+</h2>
+<div id=collapseOne class="accordion-collapse collapse show" aria-labelledby=headingOne data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Our services and cutting edge technology are offered for SMEâ€™s (Small & Medium
+size) businesses. As these business ownerâ€™s wear many hats at the same time,
+where we come in as your accounting firm in order to help you on your
+bookkeeping and accounting needs. Which gives you an edge to focus on your core
+business</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingTwo>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseTwo aria-expanded=false aria-controls=collapseTwo>
+Will I be able to connect with my bookkeeper?
+</button>
+</h2>
+<div id=collapseTwo class="accordion-collapse collapse" aria-labelledby=headingTwo data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Absolutely! Your bookkeeper is available by phone, email or text to answer any
+questions you may have. You are welcome to reach them at your convenience. Your
+bookkeeper will be in touch with you if they need any clarification on
+transactions.</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingThree>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseThree aria-expanded=false aria-controls=collapseThree>
+Can I schedule a monthly call to go over my business financials?
+</button>
+</h2>
+<div id=collapseThree class="accordion-collapse collapse" aria-labelledby=headingThree data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Giving you insights of your business through monthly financials is our real
+motive. Our accountant every month will reach you out to go over with your
+financials with you. Which will help you to make business decisions considering
+financial impact.</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingFour>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseFour aria-expanded=false aria-controls=collapseFour>
+How Pennycount is valuing itâ€™s customers?
+</button>
+</h2>
+<div id=collapseFour class="accordion-collapse collapse" aria-labelledby=headingFour data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Our customers find peace of mind in no longer needing to worry about their
+financials â€“ we do it all for them! Real-time accounting, fixed flat monthly
+rate and a supportive team that has your back!</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingFive>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseFive aria-expanded=false aria-controls=collapseFive>
+How do I manage my receipts?
+</button>
+</h2>
+<div id=collapseFive class="accordion-collapse collapse" aria-labelledby=headingFive data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>We connect digitally with your bank transactions so we will not need your
+receipts for processing your transactions. Incase, if the receipts can be
+forwarded to us it can be attached to every specific transaction which will help
+you for audit purposes.</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingsix>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapsesix aria-expanded=false aria-controls=collapsesix>
+How we can manage your payables?
+</button>
+</h2>
+<div id=collapsesix class="accordion-collapse collapse" aria-labelledby=headingsix data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>We connect your books with your bank and make timely payments via online ACH
+payments and Checks</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingseven>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseseven aria-expanded=false aria-controls=collapseseven>
+Can invoicing be managed with Pennycount?
+</button>
+</h2>
+<div id=collapseseven class="accordion-collapse collapse" aria-labelledby=headingseven data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>With PennyCount we have experts, which will take care of your invoicing on the
+basis of details provided by you</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingeight>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseeight aria-expanded=false aria-controls=collapseeight>
+How my receivables can be managed?
+</button>
+</h2>
+<div id=collapseeight class="accordion-collapse collapse" aria-labelledby=headingeight data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>PennyCount contains dedicated team of receivables which will identify, follow up,
+report our customer for itâ€™s outstanding invoices. In this way you will be
+updated with which job or client has outstanding balance</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingnine>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapsenine aria-expanded=false aria-controls=collapsenine>
+What are catchup services?
+</button>
+</h2>
+<div id=collapsenine class="accordion-collapse collapse" aria-labelledby=headingnine data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Being behind on your books is not an uncommon practice for Small and Medium size
+businesses. With PennyCount, we provide you peace of mind to focus on your core
+business instead of getting concerned about your books. Weâ€™ll help you catch up
+on bookkeeping and tax returns.</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingten>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseten aria-expanded=false aria-controls=collapseten>
+Do I need to caught up on my books in order to start up with Pennycount?
+</button>
+</h2>
+<div id=collapseten class="accordion-collapse collapse" aria-labelledby=headingten data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>Absolutely not! There are many customers that are behind on their books when they
+get started with us. We offer catch-up services to help with this.</p>
+</div>
+</div>
+</div>
+<div class=accordion-item>
+<h2 class=accordion-header id=headingeleven>
+<button class="accordion-button collapsed" type=button data-bs-toggle=collapse data-bs-target=#collapseeleven aria-expanded=false aria-controls=collapseeleven>
+How long does it take you catch up?
+</button>
+</h2>
+<div id=collapseeleven class="accordion-collapse collapse" aria-labelledby=headingeleven data-bs-parent=#accordionExample>
+<div class=accordion-body>
+<p>On average, it takes 2-3 weeks to complete catch up services. Depending on the
+number of months to catch-up and complexity, the timeframe may vary. We complete
+some catch-up services in just one week, and other more complex services take up
+to 3.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=SignUp>
+<div class=container>
+<div class="row d-flex align-items-center">
+<div class=col-md-6>
+<div>
+<h2>Sign Up Today
+</h2>
+</div>
+</div>
+<div class="col-md-6 text-center">
+<div class=frm onsubmit="return false">
+<form action id=penycountformbottom>
+<div class=alertbottom>Your message sent!</div>
+<h4>
+<span> ACTIVATE 70% OFF</span> <br>
+Sign Up Today
+</h4>
+<div class=mb-3>
+<input type=text class=form-control required placeholder=Name id=bname aria-label=Username aria-describedby=basic-addon1>
+</div>
+<div class=mb-3>
+<input type=email class=form-control required id=bemail placeholder=Email>
+</div>
+<div class=mb-3>
+<input type=text class=form-control required id=bphone placeholder="Phone Number" aria-label="Phone Number" aria-describedby=basic-addon1>
+</div>
+<input type=submit class=btn-primary value="Get this Offer Now">
+</form>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class=Footr>
+<div class=container>
+<div class=row>
+<div class=col-md-5>
+<img loading="lazy" class="logoimage"  src=./images/ftnew.png alt="loading" />
+<p>Our clearly defined culture acts as a
+catalyst for achieving fast growth and encourages
+top management. Our desire to be the best in
+our industry helps us accomplish goals in the given
+time frame while maintaining our strict quality standards.
+</p>
+</div>
+<div class=col-md-3>
+<h4>GET STARTED
+</h4>
+<a href=#how-it-works>
+<p>How It Works
+</p>
+</a>
+<a href=#pricing>
+<p>Pricing</p>
+</a>
+<a href=#testimonials>
+<p>Testimonials</p>
+</a>
+<a href=#faq>
+<p>FAQ</p>
+</a>
+</div>
+<div class=col-md-4>
+<h4>Contact</h4>
+<a>
+<p><i class="bi bi-geo-alt-fill"></i>692 GRANT CIRCLE HANOVER PARK, IL 60133
+</p>
+</a>
+<a href=mailto:sales@penycount.com>
+<p><i class="bi bi-envelope-fill"></i>sales@penycount.com</p>
+</a>
+<a href="tel:+1 (816) 307-4001">
+<p><i class="bi bi-telephone-fill"></i>+1 (816) 307-4001</p>
+</a>
+<div class=socials>
+<a href=#>
+<p><i class="bi bi-twitter"></i></p>
+</a>
+<a href=#>
+<p><i class="bi bi-facebook"></i></p>
+</a>
+<a href=#>
+<p><i class="bi bi-instagram"></i></p>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<script async  src=https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js></script>
+<script async  src=https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js></script>
+<script async > $(".carousel").on("slid.bs.carousel",function(){var b=$(this).data("bs.carousel");var a=b.getItemIndex(b.$element.find(".item.active"));$(".result .caroitem").removeClass("active-p").eq(a).addClass("active-p")});</script>
+<script async  src=https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js integrity=sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB crossorigin=anonymous></script>
+<script async  src=https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js integrity=sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13 crossorigin=anonymous></script>
+<script async>
+async function getTimeRemaining(d){var c=Date.parse(d)-Date.parse(new Date());var e=Math.floor((c/1000)%60);var b=Math.floor((c/1000/60)%60);var a=Math.floor((c/(1000*60*60))%24);var f=Math.floor(c/(1000*60*60*24));return{total:c,days:f,hours:a,minutes:b,seconds:e}}function initializeClock(a,d){var e=document.getElementById(a);var h=e.querySelector(".days");var f=e.querySelector(".hours");var c=e.querySelector(".minutes");var i=e.querySelector(".seconds");function b(){var j=getTimeRemaining(d);if(j.total<=0){clearInterval(g);var l=Date.parse(d);var m=Date.parse(new Date());while(l<=m){l=l+1*24*60*60*1000}var k=new Date(l);initializeClock("countdown",k)}else{h.innerHTML=j.days;f.innerHTML=("0"+j.hours).slice(-2);c.innerHTML=("0"+j.minutes).slice(-2);i.innerHTML=("0"+j.seconds).slice(-2)}}b();var g=setInterval(b,1000)}var deadline="December 7 2019 00:00:00 GMT+0200";initializeClock("countdown",deadline);</script>
+<script async  type=text/javascript>var Tawk_API=Tawk_API||{},Tawk_LoadStart=new Date();(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.async=true;a.src="https://embed.tawk.to/6213ce52a34c245641276613/1fselrsus";a.charset="UTF-8";a.setAttribute("crossorigin","*");b.parentNode.insertBefore(a,b)})();</script>
+<script async  src=https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js></script>
+<script async  src=mail.js></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-221375418-1"></script>
+<script async >
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-221375418-1');
 </script>
-
-    <!--Start of Tawk.to Script-->
-<script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/6213ce52a34c245641276613/1fselrsus';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
-</script>
-<!--End of Tawk.to Script-->
-
 
 </body>
-
 </html>
