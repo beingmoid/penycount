@@ -1,0 +1,5 @@
+# Example 2: Block Googlebot and Adsbot
+User-agent: Googlebot
+User-agent: AdsBot-Google
+Sitemap: https://www.penycount.com/lp2/sitemap.xml
+Sitemap: http://penycount.com/lp2/sitemap.xml
