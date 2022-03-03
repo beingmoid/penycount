@@ -1,0 +1,1297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif
+}
+
+body.bg {
+    background-color: #fff
+}
+
+.card {
+    border: 0 !important
+}
+
+a {
+    text-decoration: none !important
+}
+
+#testimonials>div>div>p {
+    text-align: center !important
+}
+
+.PenyCount {
+    background-image: url('images/bgl.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top
+}
+
+.PenyCount .navbar-collapse ul li {
+    padding-left: 20px
+}
+
+.navbar-nav button {
+    font-weight: 600
+}
+
+.logoimage {
+    width: 300px;
+    height: auto
+}
+
+.PenyCount ul li a {
+    color: #2e3149
+}
+
+.PenyCount {
+    padding: 0 40px;
+    min-height: 100vh !important
+}
+
+.PenyCount ul a:nth-child(1) button {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 16px 28px;
+    border-radius: 6px
+}
+
+.PenyCount ul a:nth-child(2) button {
+    background-color: white;
+    color: #008de7;
+    padding: 16px 48px;
+    border-radius: 6px;
+    margin-left: 20px;
+    border: 0
+}
+
+.PenyCount .EasyBook h1 {
+    color: #fff;
+    font-size: 60px;
+    font-weight: bold
+}
+
+.PenyCount .EasyBook h6 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 20px 0
+}
+
+input:focus,
+.frm button:focus {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 !important
+}
+
+input:focus-visible,
+.frm button:focus-visible {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 !important
+}
+
+input:focus-within,
+.frm button:focus-within {
+    border: 0 !important;
+    outline: 0 !important;
+    box-shadow: 0 0 !important
+}
+
+.PenyCount .EasyBook li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    line-height: -1px;
+    margin-bottom: 1rem
+}
+
+.PenyCount .EasyBook ul li {
+    list-style: none;
+    color: #fff
+}
+
+.EasyBook {
+    padding-top: 85px
+}
+
+.PenyCount .EasyBook .col-md-3 h4 {
+    color: #008de7;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 40px 0
+}
+
+.PenyCount .EasyBook .col-md-3 h4 span {
+    color: #008de7
+}
+
+.PenyCount .EasyBook .col-md-3 .frm {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    padding: 60px 30px;
+    box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26)
+}
+
+.PenyCount .EasyBook .col-md-3 .form-control {
+    background-color: #dae1e6 !important;
+    color: black;
+    border: 1px solid #fff;
+    padding: 18px;
+    border-radius: 6px
+}
+
+.PenyCount .EasyBook .col-md-3 .form-control::placeholder {
+    color: #2e3149 !important
+}
+
+.PenyCount .EasyBook .col-md-3 input.btn-primary,
+.SignUp input.btn-primary {
+    color: #fff;
+    background: #008de7;
+    background: linear-gradient(90deg, rgba(0, 141, 231, 1) 0, rgba(0, 71, 231, 1) 100%);
+    padding: 15px;
+    border: none !important;
+    width: 100%
+}
+
+.OurPartners {
+    padding-top: 200px;
+    text-align: center
+}
+
+.OurPartners img {
+    width: auto;
+    height: 50px;
+    vertical-align: middle
+}
+
+.OurPartners img:nth-child(3) {
+    width: auto;
+    height: 100px
+}
+
+.thisHow {
+    padding-top: 200px
+}
+
+.thisHow div.col-md-6:nth-child(1) div {
+    margin: 130px
+}
+
+.thisHow div.col-md-6:nth-child(1) h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #008de7
+}
+
+.thisHow div.col-md-6:nth-child(1) p {
+    color: #2e3149;
+    font-size: 18px;
+    font-weight: 400
+}
+
+.thisHow div.col-md-6:nth-child(2) h6 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #008de7
+}
+
+.thisHow div.col-md-6:nth-child(2) p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e3149
+}
+
+.pricingPlan {
+    padding: 100px 0;
+    margin: 100px 0
+}
+
+.pricingPlan h2 {
+    font-size: 48px;
+    font-weight: 600;
+    color: #008de7;
+    text-align: center
+}
+
+.pricingPlan>p {
+    font-size: 18px;
+    font-weight: 400;
+    color: #2e3149;
+    text-align: center
+}
+
+.pricingPlan .card {
+    margin-top: 100px;
+    border-radius: 10px;
+    background: #0047e7;
+    background: linear-gradient(360deg, rgba(0, 71, 231, 1) 40%, rgba(0, 141, 231, 1) 100%);
+    box-shadow: 9px 3px 24px 19px #e0e9fc;
+    -webkit-box-shadow: 9px 3px 24px 19px #e0e9fc;
+    -moz-box-shadow: 9px 3px 24px 19px rgba(224, 233, 252, 1)
+}
+
+.pricingPlan .card .card-body {
+    padding-top: 30px
+}
+
+.pricingPlan .card .btn {
+    font-weight: 600
+}
+
+.pricingPlan .card .card-body a {
+    color: #008de7;
+    background-color: #fff;
+    border: none !important;
+    margin-bottom: 40px;
+    padding: 10px 32px;
+    width: 100% !important
+}
+
+.pricingPlan .card .card-body img {
+    margin-top: -80px;
+    margin-bottom: 30px
+}
+
+.pricingPlan h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: left
+}
+
+.pricingPlan h3 {
+    color: #fff;
+    font-size: 36px;
+    text-align: left;
+    line-height: 3rem
+}
+
+.pricingPlan p {
+    color: white;
+    font-size: 15px;
+    text-align: left
+}
+
+.FAQ {
+    padding-top: 100px;
+    margin-top: 100px
+}
+
+.FAQ h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #008de7;
+    text-align: center
+}
+
+.FAQ .accordion-item {
+    background-color: transparent;
+    border: 0 solid rgba(0, 0, 0, 0.3);
+    font-size: 18px;
+    color: #2e3149
+}
+
+.FAQ .accordion-button:not(.col-mdlapsed) {
+    color: #008de7;
+    font-weight: bold;
+    background-color: transparent;
+    box-shadow: inset 0 -1px 0 rgb(0 0 0 / 13%)
+}
+
+.FAQ .accordion-button {
+    background-color: transparent;
+    color: #fff
+}
+
+.FAQ .accordion-button:focus {
+    background-color: transparent;
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: none !important;
+    color: #008de7
+}
+
+.FAQ .accordion-button {
+    background-color: transparent;
+    z-index: 3;
+    border-color: none !important;
+    outline: 0;
+    box-shadow: 0 0 0 .25rem rgb(13 110 253 / 25%);
+    color: #673bf7
+}
+
+.FAQ .accordion-button.collapsed {
+    color: #2e3149
+}
+
+.FAQ .accordion-item button {
+    padding: 30px 0;
+    border-bottom: 1px solid lightgray
+}
+
+.FAQ .accordion-body {
+    padding-left: 0 !important
+}
+
+.CustomerReview {
+    padding-top: 100px
+}
+
+.CustomerReview h2 {
+    color: #008de7;
+    font-size: 48px;
+    font-weight: 600;
+    text-align: center
+}
+
+.CustomerReview p {
+    color: #2e3149;
+    font-size: 16px
+}
+
+.SignUp {
+    padding-top: 200px
+}
+
+.SignUp h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #008de7
+}
+
+.SignUp .col-md-6:nth-child(1)>div {
+    margin: 64px
+}
+
+.SignUp .col-md-6:nth-child(2) h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #008de7
+}
+
+.SignUp .col-md-6:nth-child(2) form {
+    border: 1px solid #fff;
+    padding: 50px 30px;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 9px 3px 24px 19px rgba(224, 233, 252, 1);
+    -webkit-box-shadow: 9px 3px 24px 19px rgba(224, 233, 252, 1);
+    -moz-box-shadow: 9px 3px 24px 19px rgba(224, 233, 252, 1)
+}
+
+.SignUp .col-md-6:nth-child(2) form .form-control {
+    background-color: #dae1e6;
+    padding: 20px;
+    border-radius: 6px
+}
+
+.SignUp .col-md-6:nth-child(2) form button {
+    color: #fff;
+    background-color: #008de7;
+    border: none !important;
+    margin-top: 49px;
+    margin-bottom: 8px;
+    padding: 17px 131px
+}
+
+.SignUp .col-md-6:nth-child(2)>div {
+    margin: 70px
+}
+
+.SignUp .col-md-6:nth-child(2) form .form-control::placeholder {
+    color: #2e3149 !important
+}
+
+.Footr {
+    background-color: #e0e9fc;
+    padding: 40px 40px;
+    margin-top: 100px
+}
+
+.Footr h4 {
+    color: #008de7;
+    font-size: 24px;
+    font-weight: bold
+}
+
+.Footr a {
+    text-decoration: none !important
+}
+
+.Footr a i {
+    color: #008de7
+}
+.Footr .img-fluid {
+    width: 50% !important;
+}
+
+.Footr p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #2e3149
+}
+
+.spbt-image {
+    justify-content: space-between;
+    display: flex;
+    align-items: center
+}
+
+#pricing ul {
+    max-height: 250px !important;
+    overflow-y: auto;
+    margin-top: 20px !important;
+    margin-bottom: 30px !important
+}
+
+#pricing ul::-webkit-scrollbar {
+    width: 11px;
+    border-radius: 10px
+}
+
+#pricing ul {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(0, 71, 231, 1) rgba(0, 141, 231, 1);
+    border-radius: 10px
+}
+
+#pricing ul::-webkit-scrollbar-track {
+    background: rgba(0, 141, 231, 1);
+    border-radius: 10px
+}
+
+#pricing ul::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 71, 231, 1);
+    border-radius: 10px;
+    border: 3px solid rgba(0, 141, 231, 1)
+}
+
+input.form-control {
+    color: black
+}
+
+input.form-control:focus {
+    color: black
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg)
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden
+}
+
+.flip-card-front li {
+    text-align: left;
+    color: white
+}
+
+.flip-card-back {
+    color: white;
+    transform: rotateY(180deg)
+}
+
+.flip-card-back .card {
+    min-height: 845px
+}
+
+.flip-card-back {
+    text-align: left;
+    line-height: 1.5
+}
+
+.flip-card-back li,
+.flip-card-front li {
+    font-size: 15px;
+    margin-bottom: 40px
+}
+
+*/.CustomerReview .row>p {
+    text-align: center
+}
+
+.slider-backend {
+    @include "slider-backend.css"
+}
+
+.slider-backend .carousel {
+    min-height: 200px;
+    margin-bottom: 15px
+}
+
+.slider-backend .carousel-indicators li {
+    box-shadow: 1px 1px 1px rgba(145, 145, 145, 0.5)
+}
+
+.slider-backend .author {
+    padding-bottom: 20px;
+    margin-top: 50px;
+    text-align: center;
+    font-size: 14px
+}
+
+h3 .mon {
+    font-size: 22px
+}
+
+.carousel-inner .item {
+    text-align: left
+}
+
+.slider-backend .carousel.slide img {
+    margin-bottom: 30px;
+    width: 80px;
+    height: auto;
+    border-radius: 50%
+}
+
+.result img {
+    width: 60px;
+    height: auto;
+    border-radius: 50%
+}
+
+.slider-backend {
+    padding: 100px 0
+}
+
+.slider-backend .carousel.slide p {
+    font-size: 16px;
+    line-height: 45px
+}
+
+.slider-backend .carousel.slide b {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 45px;
+    color: #008de7
+}
+
+.slider-backend .result img,
+.slider-backend .result p {
+    display: inline-block
+}
+
+.slider-backend .result b {
+    font-size: 12px;
+    color: #000
+}
+
+.slider-backend .result p {
+    font-size: 10px;
+    font-weight: bold;
+    color: #000
+}
+
+.slider-backend .result p {
+    font-size: 10px;
+    font-weight: bold
+}
+
+.caroitem.active-p p,
+.caroitem.active-p b {
+    color: white
+}
+
+.caroitem {
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    margin-bottom: 20px
+}
+
+.slider-backend .active-p {
+    background: #008de7;
+    background: linear-gradient(90deg, rgba(0, 141, 231, 1) 0, rgba(0, 71, 231, 1) 100%);
+    color: #fff;
+    width: 120%
+}
+
+.slider-backend .active-p:active {
+    background: #008de7;
+    background: linear-gradient(90deg, rgba(0, 141, 231, 1) 0, rgba(0, 71, 231, 1) 100%);
+    color: #fff;
+    width: 120%
+}
+
+.booking {
+    color: #fff
+}
+
+.tstt {
+    color: #2e3149 !important
+}
+
+.booking .col-md-3>div {
+    background-color: #008de7;
+    border: 1px solid #008de7;
+    border-radius: 10px;
+    padding: 50px 10px
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #ffffff !important
+}
+
+.booking .container>h2,
+.booking .container>p {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 2
+}
+
+.booking .container.tst>h2,
+.booking .container.tst>p {
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 2;
+    color: red
+}
+
+.booking {
+    padding-top: 100px
+}
+
+.booking img {
+    width: 70px;
+    height: auto;
+    float: right
+}
+
+.booking .container>.row {
+    margin-top: 50px
+}
+
+#pricing li {
+    color: white;
+    line-height: 1.5em;
+    margin-bottom: 10px
+}
+
+.ratting {
+    text-align: end
+}
+
+.ratting img {
+    width: 500px
+}
+
+#pricing .text-center {
+    color: #2e3149 !important;
+    line-height: .5em !important
+}
+
+@media(max-width:800px) {
+    .owl-carousel {
+        display: block !important;
+    }
+    nav.navbar ul:nth-child(2) {
+        display: none !important;
+    }
+
+    nav.navbar .container-fluid a,
+    nav.navbar .container-fluid ul:nth-child(3) {
+        max-width: 48% !important;
+        display: inline-block;
+        margin: 0 !important;
+    }
+
+    nav.navbar ul a button {
+        padding: 0 !important;
+        font-size: 10px !important;
+        margin: 0 !important;
+        width: 100% !important;
+        padding: 10px 5px !important;
+    }
+
+    #penycountform .btn-primary {
+        padding: 8px !important;
+        font-size: 12px !important;
+    }
+
+    nav.navbar ul a:nth-child(1) button {
+        width: 162% !important;
+        margin-left: -40px !important;
+        margin-right: 10px !important;
+    }
+
+    nav.navbar .container-fluid ul:nth-child(3) a {
+        width: 49% !important;
+        display: inline-block;
+    }
+
+    nav.navbar .container-fluid {
+        padding: 0 !important;
+    }
+
+    #pricing li {
+        font-size: 12px !important
+    }
+
+    .ratting {
+        text-align: start !important
+    }
+
+    .ratting img {
+        width: 200px !important
+    }
+
+    .booking .col-md-3>div {
+        background-color: #008de7;
+        border: 1px solid #008de7;
+        border-radius: 10px;
+        padding: 20px 10px !important
+    }
+
+    .booking .col-md-3 {
+        max-width: 49% !important;
+        padding: 0 5px !important
+    }
+
+    .OurPartners img:nth-child(3) {
+        width: auto !important;
+        height: 30px !important
+    }
+
+    .spbt-image img {
+        width: 19.5% !important;
+        display: inline-block !important;
+        height: auto !important
+    }
+
+    .countdown-time {
+        padding: 10px !important
+    }
+
+    .countdown-text {
+        display: block;
+        padding-top: 5px;
+        font-size: 10px !important
+    }
+
+    .EasyBook {
+        padding-top: 0 !important
+    }
+
+    #countdown {
+        margin-bottom: 5px !important
+    }
+
+    .PenyCount .EasyBook .col-md-3 .frm {
+        padding: 20px 30px !important
+    }
+
+    .navbar {
+        padding-bottom: 0 !important
+    }
+
+    .countdown-number {
+        padding: 5px !important
+    }
+
+    .PenyCount .EasyBook .col-md-3 .form-control {
+        background-color: #dae1e6 !important;
+        color: black;
+        border: 1px solid #fff;
+        padding: 10px !important;
+        border-radius: 6px
+    }
+
+    .form-control,
+    .btn {
+        font-size: .8em !important
+    }
+
+    .btn {
+        line-height: .8 !important
+    }
+
+    .PenyCount .EasyBook .col-md-3 h4 {
+        color: #008de7;
+        font-size: 15px !important;
+        font-weight: bold;
+        text-align: center;
+        padding: 0 !important
+    }
+
+    .countdown {
+        font-size: 16px !important
+    }
+
+    .PenyCount.py-4 {
+        padding-top: 0 !important;
+        padding: 0 20px !important
+    }
+
+    .navbar-brand {
+        max-width: 60% !important
+    }
+
+    .logoimage {
+        width: 100% !important
+    }
+
+    .pricingPlan .card {
+        width: 80% !important;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    .PenyCount .EasyBook li {
+        font-size: 10px !important;
+        margin-bottom: .5rem !important
+    }
+
+    section.PenyCount.py-4>div>div>div.col-md-8>img {
+        width: 200px !important
+    }
+
+    .PenyCount .EasyBook h6,
+    p {
+        font-size: 13px !important;
+        font-weight: 500;
+        padding: 0 !important
+    }
+
+    #faq>div>div>div {
+        margin-top: 0 !important;
+        padding-top: 0 !important
+    }
+
+    #how-it-works>div>div>div:nth-child(2)>div>div.col-md-2>img {
+        width: 80px !important;
+        height: auto !important
+    }
+
+    .row.pb-5 {
+        padding-bottom: 0 !important
+    }
+
+    .OurPartners img {
+        width: auto;
+        height: 50px;
+        display: block !important;
+        margin: auto
+    }
+
+    .PenyCount .EasyBook h1 {
+        font-size: 27px !important
+    }
+
+    .slider-backend .active-p {
+        width: 100% !important
+    }
+
+    .SignUp .col-md-6:nth-child(2) form button {
+        padding: 17px !important
+    }
+
+    form button {
+        width: 100% !important;
+        padding: 20px 0 !important;
+        margin: 0 !important
+    }
+
+    .PenyCount ul button:nth-child(2) {
+        margin-left: 0 !important;
+        margin-top: 10px
+    }
+
+    #navbarSupportedContent>ul:nth-child(1) {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important
+    }
+
+    section {
+        padding-top: 100px;
+        padding-bottom: 0 !important
+    }
+
+    .thisHow div.col-md-6:nth-child(1) div {
+        margin: 0 !important
+    }
+
+    h2 {
+        font-size: 25px !important
+    }
+
+    .thisHow .col-md-6 .row {
+        margin: 20px 0 !important
+    }
+
+    .EasyBook .col-md-3 {
+        margin: 20px 0 !important
+    }
+
+    .flip-card {
+        height: 100% !important
+    }
+
+    .result {
+        display: none
+    }
+
+    .pricingPlan .col-md-3:nth-child(3) {
+        margin-top: 0 !important
+    }
+
+    .flip-card {
+        margin: auto
+    }
+
+    section.booking div.col-md-3>div {
+        margin: 10px 0
+    }
+
+    .FAQ h2 {
+        font-size: 50px
+    }
+
+    .SignUp .col-md-6:nth-child(1)>div {
+        margin: 0 !important
+    }
+
+    .SignUp h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    .SignUp .col-md-6:nth-child(2)>div {
+        margin: 0 !important;
+        padding: 0 40px
+    }
+
+    .booking * {
+        color: white;
+        text-align: center
+    }
+
+    .booking img {
+        float: none !important;
+        margin-bottom: 20px !important
+    }
+
+    .FAQ {
+        padding: 0 20px
+    }
+
+    .booking h2 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.3 !important
+    }
+}
+
+section.Footr>div>div>div.col-md-5>img {
+    margin-bottom: 50px
+}
+
+section.Footr h4 {
+    margin-bottom: 50px
+}
+
+.Footr a i {
+    margin-right: 20px;
+    font-size: 20px
+}
+
+.Footr .socials a {
+    display: inline-block
+}
+
+.Footr {
+    padding-top: 80px
+}
+
+.booking .container>h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #008de7;
+    text-align: center
+}
+
+@media(max-width:1500px) {
+    .PenyCount .EasyBook h1 {
+        font-size: 40px
+    }
+
+    .slider-backend .active-p {
+        width: 100% !important
+    }
+
+    .SignUp .col-md-6:nth-child(2) form button {
+        padding: 17px !important
+    }
+
+    form button {
+        width: 100% !important;
+        padding: 20px 0 !important;
+        margin: 0 !important
+    }
+
+    .booking img .PenyCount ul button:nth-child(2) {
+        margin-left: 0 !important
+    }
+
+    #navbarSupportedContent>ul:nth-child(1) {
+        padding-top: 30px !important;
+        padding-bottom: 0 !important
+    }
+
+    section {
+        padding-top: 50px !important;
+        padding-bottom: 0 !important;
+        margin: 0 !important
+    }
+
+    .slider-backend .carousel.slide p {
+        line-height: 25px !important
+    }
+
+    .slider-backend .carousel.slide img {
+        margin-bottom: 10px !important;
+        width: 60px !important
+    }
+
+    .SignUp {
+        padding-bottom: 50px !important
+    }
+
+    .slider-backend {
+        padding: 0 !important;
+        padding-top: 20px !important
+    }
+
+    .thisHow div.col-md-6:nth-child(1) div {
+        margin: 0 !important
+    }
+
+    /* .thisHow div.col-md-6:nth-child(1) h2 {
+        font-size: 50px
+    } */
+
+    .thisHow .col-md-6 .row {
+        margin: 20px 0 !important
+    }
+
+    .EasyBook .col-md-3 {
+        margin: 50px 0
+    }
+
+    .flip-card {
+        height: 100% !important
+    }
+
+    .slider-backend .result img {
+        width: 100% !important;
+        height: auto !important
+    }
+
+    .pricingPlan p {
+        font-size: 12px !important
+    }
+
+    .flip-card {
+        margin: auto
+    }
+
+    section.booking div.col-md-3>div {
+        margin: 10px 0
+    }
+
+    .FAQ h2 {
+        font-size: 50px
+    }
+
+    .SignUp .col-md-6:nth-child(1)>div {
+        margin: 0 !important
+    }
+
+    .SignUp h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-bottom: 30px
+    }
+
+    .SignUp .col-md-6:nth-child(2)>div {
+        margin: 0 !important;
+        padding: 0 40px
+    }
+
+    .booking * {
+        color: white;
+        text-align: center
+    }
+
+    .booking img {
+        float: none !important;
+        margin-bottom: 20px !important
+    }
+
+    .FAQ {
+        padding: 0 20px
+    }
+
+    .booking h2 {
+        color: #fff;
+        font-size: 48px;
+        font-weight: 600;
+        text-align: center;
+        line-height: 1.3 !important
+    }
+
+    form button {
+        width: 100% !important;
+        padding: 20px 0 !important;
+        margin: 0 !important
+    }
+}
+
+#getstarted form h4 {
+    color: #008de7;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 0 40px 0
+}
+
+#getstarted .frm {
+    background-color: #fff;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    padding: 60px 30px;
+    box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26);
+    -webkit-box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: -2px 3px 22px 14px rgba(0, 0, 0, 0.26)
+}
+
+#getstarted form .form-control {
+    background-color: #dae1e6 !important;
+    color: black;
+    border: 1px solid #fff;
+    padding: 18px;
+    border-radius: 6px
+}
+
+#getstarted .form-control::placeholder {
+    color: #2e3149 !important
+}
+
+#getstarted form button {
+    color: #fff;
+    background: #008de7;
+    background: linear-gradient(90deg, rgba(0, 141, 231, 1) 0, rgba(0, 71, 231, 1) 100%);
+    padding: 15px;
+    border: none !important;
+    width: 100%
+}
+
+.PenyCount .EasyBook ul {
+    padding-left: 1em !important;
+    list-style-position: outside;
+    vertical-align: text-top
+}
+
+.PenyCount .EasyBook ul li::marker {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    content: "\f058"
+}
+
+.PenyCount .EasyBook ul li span {
+    display: inline-block;
+    padding-left: 20px
+}
+
+.countdown {
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    background: rgba(0, 141, 231, 1);
+    display: inline-block
+}
+
+.countdown-time {
+    padding: 15px;
+    border-radius: 3px;
+    background: rgba(0, 71, 231, 1);
+    display: inline-block
+}
+
+.countdown-text {
+    display: block;
+    padding-top: 5px;
+    font-size: 16px
+}
+
+.alert,
+.alertbottom {
+    background-color: lightgreen;
+    width: 100%;
+    padding: 10px 0 !important;
+    color: black !important;
+    text-align: center;
+    display: none
+}
+
+@media (min-width:1200px) {
+    body>section.PenyCount.py-4>div>div>div.col-md-3 {
+        width: 33%;
+    }
+}
+
+@media (min-width:1500px) {
+    body>section.PenyCount.py-4>div>div>div.col-md-3 {
+        width: 25%;
+    }
+}
+
+@media (min-width:1000px) {
+    .owl-carousel {
+        display: block !important;
+    }
+
+    .col-md-3.item {
+        display: inline-block !important;
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 24.5% !important;
+    }
+}
+
+.owl-carousel .owl-item img {
+    width: auto !important;
+}
+.card {
+    width: 90% !important
+}
